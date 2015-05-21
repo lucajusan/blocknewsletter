@@ -36,6 +36,7 @@
 				<input class="inputNew" id="newsletter-input" type="text" name="email" size="18" value="{if isset($value) && $value}{$value}{else}{l s='your e-mail' mod='blocknewsletter'}{/if}" />
 				<input type="submit" value="ok" class="button_mini" name="submitNewsletter" />
 				<input type="hidden" name="action" value="0" />
+				<input type="checkbox" name="privacy" /> <span>{l s='Privacy' mod='blocknewsletter'}</span>
 			</p>
 		</form>
 	</div>
