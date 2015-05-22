@@ -336,7 +336,7 @@ class Blocknewsletter extends Module
 			return $this->error = $this->l('Invalid email address.');
 			
 		/*privacy flag*/
-		if (isset($_POST['privacy']))
+		if (!isset($_POST['privacy']))
 			return $this->error = $this->l('You must accept our privacy policy');
 
 		/* Unsubscription */
